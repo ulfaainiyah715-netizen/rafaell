@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafael Anugrah Sofyan | About Me</title>
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon (1) "image/x-icon">
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background: linear-gradient(270deg, #0f2027, #203a43, #2c5364);
+    background-size: 600% 600%;
+    animation: bgMove 18s ease infinite;
+    color: #f5f5f5;
+}
+
+@keyframes bgMove {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+nav {
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(14px);
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #7efcff;
+    text-shadow: 0 0 10px rgba(126,252,255,0.9);
+}
+
+.container {
+    max-width: 900px;
+    margin: 70px auto;
+    padding: 20px;
+    position: relative;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    background: radial-gradient(circle, #7efcff, transparent 70%);
+    top: -80px;
+    right: -80px;
+    filter: blur(70px);
+    opacity: 0.6;
+    z-index: 0;
+}
+
+/* ===== CARD DENGAN FOTO TRANSPARAN ===== */
+.card {
+    position: relative;
+    z-index: 1;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(18px);
+    border-radius: 22px;
+    padding: 42px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.35);
+    overflow: hidden;
+}
+
+/* FOTO TRANSPARAN */
+.card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: 
+        linear-gradient(rgba(15,32,39,0.85), rgba(15,32,39,0.95)),
+        url("D:\WEBSITEKU\ulfaa.jpeg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.35; /* transparansi foto */
+    z-index: -1;
+}
+
+/* BORDER GRADIENT */
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: 22px;
+    background: linear-gradient(135deg, #7efcff, transparent, #b388ff);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+h1 {
+    color: #7efcff;
+    margin-bottom: 12px;
+}
+
+h1::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #7efcff, #b388ff);
+    display: block;
+    margin-top: 12px;
+    border-radius: 20px;
+}
+
+p {
+    line-height: 1.9;
+    font-size: 16px;
+    color: #e0f2f1;
+    margin-top: 20px;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    margin: 30px 0;
+    background: linear-gradient(90deg, transparent, #7efcff, #b388ff, transparent);
+}
+
+.video-wrapper {
+    margin-top: 35px;
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    max-width: 620px;
+    border-radius: 18px;
+    box-shadow: 0 0 30px rgba(126,252,255,0.6);
+    border: 2px solid rgba(255,255,255,0.25);
+}
+
+footer {
+    margin-top: 70px;
+    padding: 26px;
+    background: rgba(0,0,0,0.25);
+    backdrop-filter: blur(12px);
+    text-align: center;
+    color: #cfd8dc;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="indexx.html">🏠 Home</a>
+    <a href="d:\WEBSITEKU\ULFA AINIYAH ASSYAHRA 3F\SIM bro\CV- RAFAEL ANUGRAH SOFYAN.jpeg">📄 Download CV</a>
+    <a href="contact.html">📩 Contact</a>
+    <a href="aboutmee.html">👩‍🎓 About Me</a>
+</nav>
+
+<div class="container">
+    <div class="card">
+        <h1>About Me</h1>
+
+        <p>
+            Hi, saya Rafael Anugrah Sofyan, mahasiswa Politeknik Pembangunan Pertanian (Polbangtan) Gowa.
+            Saya memiliki ketertarikan pada dunia perternakan modern, teknologi digital, dan pengembangan kreativitas.
+        </p>
+
+        <div class="divider"></div>
+
+        <p>
+            Saat ini saya sedang mempelajari pengembangan website sebagai sarana untuk
+            menyalurkan ide, membangun portofolio digital, dan meningkatkan keterampilan teknologi.
+        </p>
+
+        <p>
+            Saya ingin terus mengembangkan kemampuan di bidang HTML, CSS, dan teknologi digital lainnya
+            untuk mendukung peran saya sebagai mahasiswa yang aktif, kreatif, dan adaptif.
+        </p>
+
+        <div class="video-wrapper">
+            <video controls>
+                <source src="d:\WEBSITEKU\ULFA AINIYAH ASSYAHRA 3F\SIM bro\videonugi.mp4" type="video/mp4">
+                Browser Anda tidak mendukung video
+            </video>
+        </div>
+    </div>
+</div>
+
+<footer>
+    ©️ 2026 Rafael Anugrah Sofyan | Personal Website
+</footer>
+
+</body>
+</html>

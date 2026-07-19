@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rafael Anugrah Sofyan | Internal Link</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins','Segoe UI',sans-serif;
+    background:linear-gradient(270deg,#0f2027,#203a43,#2c5364);
+    background-size:600% 600%;
+    animation:bgMove 18s ease infinite;
+    color:#fff;
+}
+
+@keyframes bgMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* Navbar */
+nav{
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(14px);
+    padding:18px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin:0 18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#7efcff;
+    text-shadow:0 0 10px #7efcff;
+}
+
+/* Card */
+.container{
+    max-width:750px;
+    margin:80px auto;
+    padding:20px;
+}
+
+.card{
+    background:rgba(255,255,255,.10);
+    backdrop-filter:blur(16px);
+    border-radius:22px;
+    padding:45px;
+    text-align:center;
+    box-shadow:0 20px 45px rgba(0,0,0,.35);
+    position:relative;
+}
+
+.card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    padding:1px;
+    border-radius:22px;
+    background:linear-gradient(135deg,#7efcff,transparent,#b388ff);
+    -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+    -webkit-mask-composite:xor;
+    mask-composite:exclude;
+}
+
+h1{
+    color:#7efcff;
+    margin-bottom:18px;
+}
+
+h1::after{
+    content:"";
+    display:block;
+    width:80px;
+    height:4px;
+    margin:12px auto;
+    border-radius:20px;
+    background:linear-gradient(90deg,#7efcff,#b388ff);
+}
+
+p{
+    line-height:1.8;
+    color:#e0f2f1;
+    margin-top:20px;
+}
+
+footer{
+    margin-top:30px;
+    color:#cfd8dc;
+    font-size:14px;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+    <a href="indexx.html">🏠 Home</a>
+    <a href="contact.html">📩 Contact</a>
+    <a href="aboutmee.html">👩‍🎓 About Me</a>
+    <a href="CV- RAFAEL ANUGRAH SOFYAN">📄 Download CV</a>
+</nav>
+
+<div class="container">
+<div class="card">
+
+<h1>Selamat Datang</h1>
+
+<p>
+Halaman ini merupakan contoh penggunaan <b>Internal Link</b> pada HTML.
+Silakan klik menu navigasi di atas untuk berpindah ke halaman Home,
+Contact, About Me, atau Download.
+</p>
+
+<p>
+Website ini dibuat sebagai latihan HTML dan CSS dengan tampilan modern,
+menggunakan tema biru gelap yang konsisten pada setiap halaman.
+</p>
+
+<footer>
+© 2026 Rafael Anugrah Sofyan
+</footer>
+
+</div>
+</div>
+
+</body>
+</html>
